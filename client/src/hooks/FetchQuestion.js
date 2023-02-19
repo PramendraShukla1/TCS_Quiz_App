@@ -19,7 +19,7 @@ const dispatch = useDispatch();
 (async ()=>{
 try{
 
-    const [{questions, answers}] = await getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/questions`,(data)=>data)
+    const [{questions, answers}] = await getServerData(`https://quiz-app-ae62.onrender.com/api/questions`,(data)=>data)
     // console.log({questions, answers})
     
 
